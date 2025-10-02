@@ -9,7 +9,7 @@ export default function SeeAllEvents() {
   const fetchEvents = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:8080/api/admin/events", {
+      const res = await axios.get("https://eventease-v8y4.onrender.com/api/admin/events", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setEvents(res.data.data || []);

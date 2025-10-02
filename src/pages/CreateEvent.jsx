@@ -22,7 +22,7 @@ export default function CreateEvent() {
     e.preventDefault();
     try {
       // ✅ Post request (adjust API URL as needed)
-      const res = await axios.post("http://localhost:8080/api/admin/events", formData);
+      const res = await axios.post("https://eventease-v8y4.onrender.com/api/admin/events", formData);
 
       setMessage("✅ Event created successfully!");
       setFormData({

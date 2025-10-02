@@ -21,7 +21,7 @@ export default function LandingPage() {
   // Fetch events
   const fetchEvents = async (page = 1) => {
     try {
-      const res = await fetch(`http://localhost:8080/api/user/events?page=${page}`);
+      const res = await fetch(`https://eventease-v8y4.onrender.com/api/user/events?page=${page}`);
       const data = await res.json();
       setEvents(data.data);
 
